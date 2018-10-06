@@ -1,15 +1,63 @@
+* button,
+* input,
+* textarea,
 body {
-  font-family: 'Source Sans Pro', 'Trebuchet MS', 'Lucida Grande', 'Bitstream Vera Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  text-align: center;
-  color: #293c4b;
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: 0 0
 }
 
-h1 {
-  font-size: 30px;
+textarea {
+  resize: none
 }
 
-img {
-  margin: 20px 0;
-  max-width: 200px;
+.sticky {
+  position: -webkit-sticky;
+  position: sticky
+}
+
+.pointer {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.shadow-hi {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .25), transparent), -webkit-linear-gradient(right, rgba(0, 0, 0, .25), transparent);
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: 1em 100%, 1em 100%;
+  background-attachment: scroll, scroll
+}
+
+* {
+  -webkit-overflow-scrolling: touch
+}
+
+details summary::-webkit-details-marker {
+  display: none
+}
+
+.noclick {
+  pointer-events: none
+}
+
+.noclick * {
+  pointer-events: auto
+}
+
+::-webkit-scrollbar {
+  display: none
+}
+
+input::-webkit-input-placeholder {
+  color: inherit;
+  font: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  opacity: .5
 }
