@@ -24,13 +24,36 @@ var _user$project$Main$view = function (model) {
 				ctor: '::',
 				_0: A2(
 					_elm_lang$html$Html$h1,
-					{ctor: '[]'},
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('purple tc'),
+						_1: {ctor: '[]'}
+					},
 					{
 						ctor: '::',
 						_0: _elm_lang$html$Html$text('Welcome to 48Below'),
 						_1: {ctor: '[]'}
 					}),
-				_1: {ctor: '[]'}
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$a,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$href('sms:15733408423;?&body=48below'),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('bg-purple flex-auto tc link pa3 ma3 br2 white grow f4'),
+								_1: {ctor: '[]'}
+							}
+						},
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('Find events'),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				}
 			}
 		});
 };
