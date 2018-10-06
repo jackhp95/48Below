@@ -15,7 +15,7 @@ var _user$project$Main$view = function (model) {
 					_0: _elm_lang$html$Html_Attributes$class('w-60 center'),
 					_1: {
 						ctor: '::',
-						_0: _elm_lang$html$Html_Attributes$src('/logo.png'),
+						_0: _elm_lang$html$Html_Attributes$src('logo.png'),
 						_1: {ctor: '[]'}
 					}
 				},
@@ -37,22 +37,78 @@ var _user$project$Main$view = function (model) {
 				_1: {
 					ctor: '::',
 					_0: A2(
-						_elm_lang$html$Html$a,
+						_elm_lang$html$Html$div,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$href('sms:15733408423;?&body=48below'),
-							_1: {
-								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('bg-purple flex-auto tc link pa3 ma3 br2 white grow f4'),
-								_1: {ctor: '[]'}
-							}
+							_0: _elm_lang$html$Html_Attributes$class('dn-ns'),
+							_1: {ctor: '[]'}
 						},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('Find events'),
+							_0: A2(
+								_elm_lang$html$Html$a,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$href('sms:15738251289;?&body=48below'),
+									_1: {
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('bg-purple flex-auto tc link pa3 ma3 br2 white grow f4'),
+										_1: {ctor: '[]'}
+									}
+								},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('Find events'),
+									_1: {ctor: '[]'}
+								}),
 							_1: {ctor: '[]'}
 						}),
-					_1: {ctor: '[]'}
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$div,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('dn dib-ns'),
+								_1: {ctor: '[]'}
+							},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('recieve a text from us! '),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$input,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$type_('tel'),
+											_1: {
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$placeholder('Mobile Number'),
+												_1: {ctor: '[]'}
+											}
+										},
+										{ctor: '[]'}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$button,
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$class('button-reset bn pa3 ma0 bg-purple white'),
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('Get Started!'),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}
+							}),
+						_1: {ctor: '[]'}
+					}
 				}
 			}
 		});
